@@ -1,0 +1,6 @@
+{
+  "name": "Royal Gold Jewellers",
+  "description": "Luxury Indian jewellery showroom website demo showcasing heritage gold, polki, diamond solitaires, and bridal trousseau collections with WhatsApp enquiry and showroom appointments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

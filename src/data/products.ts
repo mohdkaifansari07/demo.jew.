@@ -1,0 +1,273 @@
+import { Product, CategoryInfo } from '../types/jewellery';
+
+export const DEMO_PRODUCTS: Product[] = [
+  {
+    id: "rgj-01",
+    name: "Classic Gold Necklace Set",
+    category: "Gold",
+    price: 85000,
+    image: "/src/assets/images/hero_indian_bridal_necklace_1793280080205.jpg",
+    shortDescription: "Regal multilayered gold necklace with intricate filigree lace and cultured pearl drop embellishments.",
+    description: "An exemplary piece showcasing classic Indian goldsmithing with symmetrical floral jaali openwork, graduated beaded garlands, and delicate seed pearls. Handcrafted for grand celebrations and traditional festivities.",
+    motif: "Floral Jaali & Royal Archway",
+    idealFor: "Weddings, Reception & Festive Galas",
+    customization: "Length adjustment, matching maang tikka, custom bead colors",
+    collection: "Heritage Gold",
+    isFeatured: true,
+    isNewArrival: false
+  },
+  {
+    id: "rgj-02",
+    name: "Traditional Bridal Haar",
+    category: "Bridal",
+    price: 145000,
+    image: "/src/assets/images/collection_bridal_haar_1793280081125.jpg",
+    shortDescription: "Grand temple-inspired antique haar featuring auspicious Lakshmi medallion and emerald clusters.",
+    description: "A monumental heirloom haar handcrafted by master artisans featuring intricate repoussé depictions of Goddess Lakshmi flanked by peacocks and suspended emerald drops. Finished in a rich warm antique gold patina.",
+    motif: "Temple Deity & Dancing Peacocks",
+    idealFor: "Muhurtham & Bridal Phera Ceremonies",
+    customization: "Available in pure yellow gold or antique burnish finish",
+    collection: "Bridal Trousseau",
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: "rgj-03",
+    name: "Elegant Gold Bangles",
+    category: "Bangles",
+    price: 42000,
+    image: "/src/assets/images/collection_gold_bangles_1793280082675.jpg",
+    shortDescription: "Pair of handcrafted gold kadas with fine floral filigree and subtle Meenakari enamel accents.",
+    description: "Designed for effortless elegance, this pair of hinged kadas highlights hand-drawn wire filigree work, accented with midnight blue and ruby red Meenakari artistry. Features a secure screw-clasp mechanism.",
+    motif: "Vine Trellis & Meenakari Foliage",
+    idealFor: "Daily Luxury, Family Functions & Sangeet",
+    customization: "Custom wrist sizes from 2.2 to 2.8, screw or openable lock",
+    collection: "Heritage Gold",
+    isFeatured: true,
+    isNewArrival: false
+  },
+  {
+    id: "rgj-04",
+    name: "Diamond Solitaire Ring",
+    category: "Diamond",
+    price: 38000,
+    image: "/src/assets/images/collection_diamond_solitaire_1793280082425.jpg",
+    shortDescription: "Brilliant cut solitaire held in a contemporary six-prong dual-tone gold crown setting.",
+    description: "A timeless expression of eternal devotion. The luminous solitaire captures light with every gesture, elevated on a gently tapered band combining radiant yellow gold with a white gold prong basket.",
+    motif: "Classic Round Brilliant Crown",
+    idealFor: "Engagement, Anniversaries & Milestones",
+    customization: "Available in 18k Rose Gold, White Gold, or Yellow Gold bands",
+    collection: "Solitaire Dreams",
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: "rgj-05",
+    name: "Gold Jhumka Earrings",
+    category: "Earrings",
+    price: 18500,
+    image: "/src/assets/images/product_gold_jhumka_1793280098460.jpg",
+    shortDescription: "Traditional dome jhumkas with granulated texturing, teardrop ruby stud and pearl fringe tassels.",
+    description: "Sculpted with granular gold beads and lightweight internal hollow crafting, these royal jhumkas sway gracefully with every movement. Features a screw back for secure comfort throughout extended celebrations.",
+    motif: "Architectural Temple Chhatri",
+    idealFor: "Diwali, Sangeet & Traditional Functions",
+    customization: "Available with emerald, ruby, or all-pearl drops",
+    collection: "Heritage Gold",
+    isFeatured: true,
+    isNewArrival: false
+  },
+  {
+    id: "rgj-06",
+    name: "Modern Gold Pendant",
+    category: "Necklaces",
+    price: 12500,
+    image: "/src/assets/images/product_gold_pendant_1793280099537.jpg",
+    shortDescription: "Geometric mandala pendant with fine satin engraving and bezel-set center accent.",
+    description: "Understated luxury for the contemporary woman. A balanced hexagonal mandala design on a dainty gold link chain that transitions seamlessly from executive workwear to evening dinner affairs.",
+    motif: "Sacred Hexagonal Mandala",
+    idealFor: "Daily Wear & Corporate Elegance",
+    customization: "Choice of 16-inch or 18-inch adjustable cable chain",
+    collection: "Contemporary Everyday",
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: "rgj-07",
+    name: "Bridal Kundan Set",
+    category: "Bridal",
+    price: 65000,
+    image: "/src/assets/images/product_kundan_set_1793280099788.jpg",
+    shortDescription: "Regal jadau kundan choker necklace with lustrous green onyx beads and reverse meenakari work.",
+    description: "Rooted in royal Rajputana heritage, this collar choker features uncut polki mirrors embedded in pure gold foil with intricate floral red-and-green enameling along the reverse side. Comes with coordinating jhumkis.",
+    motif: "Kundan Jadau & Emerald Drops",
+    idealFor: "Bridal Trousseau & Grand Royal Weddings",
+    customization: "Custom bead colors (Ruby Red, Pastel Rose, Pearl White)",
+    collection: "Bridal Trousseau",
+    isFeatured: true,
+    isNewArrival: false
+  },
+  {
+    id: "rgj-08",
+    name: "Auspicious Floral Mangalsutra",
+    category: "Mangalsutras",
+    price: 32000,
+    image: "/src/assets/images/product_mangalsutra_1793280099929.jpg",
+    shortDescription: "Contemporary double-string black bead mangalsutra with diamond floral blossom pendant.",
+    description: "Bridging sacred sanctity with modern finesse. Genuine faceted black onyx beads interwoven with delicate gold links and anchored by an open-petal floral pendant set with sparkling brilliant accents.",
+    motif: "Petal Blossom of Togetherness",
+    idealFor: "Daily Wear for the Modern Bride",
+    customization: "Available in 16, 18, and 20-inch chain lengths",
+    collection: "Sacred Bonds",
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: "rgj-09",
+    name: "Everyday Gold Chain",
+    category: "Gold",
+    price: 24000,
+    image: "/src/assets/images/product_gold_pendant_1793280099537.jpg",
+    shortDescription: "Sturdy interlocking round wheat chain with diamond-cut facets for gentle daily glimmer.",
+    description: "Engineered for durability and timeless poise. Crafted with interlocking circular links buffed to a liquid mirror sheen with an easy-glide lobster clasp.",
+    motif: "Interlocking Wheat Link",
+    idealFor: "Casual Everyday Wear & Pendants",
+    customization: "Custom weight classes and length options (18\" to 24\")",
+    collection: "Contemporary Everyday",
+    isFeatured: false,
+    isNewArrival: false
+  },
+  {
+    id: "rgj-10",
+    name: "Heritage Temple Choker",
+    category: "Necklaces",
+    price: 98000,
+    image: "/src/assets/images/collection_bridal_haar_1793280081125.jpg",
+    shortDescription: "Intricate antique choker carved with South Indian temple motifs and cascading south sea pearls.",
+    description: "Inspired by ancient Dravidian temple carvings, this choker sits comfortably along the collarbone with padded velvet cord backing and hand-sculpted mythological motifs.",
+    motif: "Temple Sculptures & Kalash",
+    idealFor: "South Indian Weddings & Grand Festivals",
+    customization: "Silk dori chord color and length adjustment",
+    collection: "Heritage Gold",
+    isFeatured: false,
+    isNewArrival: true
+  },
+  {
+    id: "rgj-11",
+    name: "Royal Polki Chandbali Earrings",
+    category: "Earrings",
+    price: 54000,
+    image: "/src/assets/images/product_gold_jhumka_1793280098460.jpg",
+    shortDescription: "Crescent moon chandbalis embedded with uncut polki and hanging seed pearl clusters.",
+    description: "Mughal era charm reimagined for the modern connoisseur. Delicate crescent tiers with hand-set polki stones and soothing champagne enamel accents along the edges.",
+    motif: "Crescent Moon (Chandbali)",
+    idealFor: "Sangeet, Cocktails & Wedding Receptions",
+    customization: "Option to add detachable ear-chains (Sahara)",
+    collection: "Bridal Trousseau",
+    isFeatured: false,
+    isNewArrival: false
+  },
+  {
+    id: "rgj-12",
+    name: "Filigree Gold Kada Pair",
+    category: "Bangles",
+    price: 76000,
+    image: "/src/assets/images/collection_gold_bangles_1793280082675.jpg",
+    shortDescription: "Broad royal statement kadas featuring deep die-stamped jali work and ruby florets.",
+    description: "A bold statement of royal heritage. These wide cuffs feature openwork lace that lets the skin breathe while delivering substantial presence and unmistakable grandeur.",
+    motif: "Royal Jaali Lattice & Florets",
+    idealFor: "Bridal Trousseau & Anniversaries",
+    customization: "Single piece or matching pair, custom width options",
+    collection: "Heritage Gold",
+    isFeatured: false,
+    isNewArrival: false
+  },
+  {
+    id: "rgj-13",
+    name: "Eternity Diamond Band",
+    category: "Rings",
+    price: 45000,
+    image: "/src/assets/images/collection_diamond_solitaire_1793280082425.jpg",
+    shortDescription: "Continuous halo of channel-set round brilliant diamonds in 18k warm yellow gold.",
+    description: "An unbroken ring of fire representing boundless love. Precision micro-prong set stones aligned with zero gaps for maximum scintillation from every vantage point.",
+    motif: "Continuous Infinite Halo",
+    idealFor: "Weddings, Anniversaries & Stacking",
+    customization: "Available in Platinum, Rose Gold, or Yellow Gold",
+    collection: "Solitaire Dreams",
+    isFeatured: false,
+    isNewArrival: true
+  },
+  {
+    id: "rgj-14",
+    name: "Modern Solitaire Mangalsutra",
+    category: "Mangalsutras",
+    price: 28000,
+    image: "/src/assets/images/product_mangalsutra_1793280099929.jpg",
+    shortDescription: "Minimalist single bezel diamond centerpiece flanked by traditional black auspicious beads.",
+    description: "A refined interpretation of sacred vows designed specifically for the professional woman who values subtle grace and comfort under all daily attires.",
+    motif: "Single Solitaire Sunburst",
+    idealFor: "Workwear & Minimalist Daily Style",
+    customization: "Adjustable 16-18 inch loop slider",
+    collection: "Sacred Bonds",
+    isFeatured: false,
+    isNewArrival: false
+  }
+];
+
+export const CATEGORIES_DATA: CategoryInfo[] = [
+  {
+    id: "Gold",
+    title: "Gold Jewellery",
+    subtitle: "22K Heritage & Everyday Classics",
+    image: "/src/assets/images/hero_indian_bridal_necklace_1793280080205.jpg",
+    itemCount: 4
+  },
+  {
+    id: "Diamond",
+    title: "Diamond Jewellery",
+    subtitle: "Solitaires & Dazzling Bands",
+    image: "/src/assets/images/collection_diamond_solitaire_1793280082425.jpg",
+    itemCount: 2
+  },
+  {
+    id: "Bridal",
+    title: "Bridal Jewellery",
+    subtitle: "Opulent Kundan, Polki & Haar Sets",
+    image: "/src/assets/images/product_kundan_set_1793280099788.jpg",
+    itemCount: 3
+  },
+  {
+    id: "Rings",
+    title: "Rings",
+    subtitle: "Engagement Crowns & Eternity Bands",
+    image: "/src/assets/images/collection_diamond_solitaire_1793280082425.jpg",
+    itemCount: 2
+  },
+  {
+    id: "Earrings",
+    title: "Earrings",
+    subtitle: "Jhumkis, Chandbalis & Studs",
+    image: "/src/assets/images/product_gold_jhumka_1793280098460.jpg",
+    itemCount: 2
+  },
+  {
+    id: "Bangles",
+    title: "Bangles & Kadas",
+    subtitle: "Filigree Cuffs & Meenakari Pairs",
+    image: "/src/assets/images/collection_gold_bangles_1793280082675.jpg",
+    itemCount: 2
+  },
+  {
+    id: "Necklaces",
+    title: "Necklaces",
+    subtitle: "Temple Chokers & Layered Chains",
+    image: "/src/assets/images/collection_bridal_haar_1793280081125.jpg",
+    itemCount: 3
+  },
+  {
+    id: "Mangalsutras",
+    title: "Mangalsutras",
+    subtitle: "Sacred Black Beads & Diamond Accents",
+    image: "/src/assets/images/product_mangalsutra_1793280099929.jpg",
+    itemCount: 2
+  }
+];
